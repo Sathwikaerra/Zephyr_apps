@@ -23,17 +23,18 @@ display:flex;
 align-items:center;
 justify-content:center;
 position:relative;
-padding:80px 30px;
+padding:20px 30px;
 height:100vh;
 
 @media screen and (max-width:960px)
 {
-  padding:66px 16px;
+  padding:40px 16px;
 }
 
 @media screen and (max-width:640px)
 {
-  padding:32px 16px;
+  padding:16px 16px;
+  height:70vh;
 }
 z-index:1;
 clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);

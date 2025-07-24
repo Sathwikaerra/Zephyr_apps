@@ -19,18 +19,21 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 20px;
   gap: 20px;
+   @media (max-width: 768px) {
+    padding-top: 80px;
+  }
 `;
 
 const Heading = styled.div`
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
   color: #0ea5e9;
   margin-bottom: 10px;
 
   @media (max-width: 768px) {
-    font-size: 24px;
+    font-size: 20px; 
   }
 `;
 
@@ -55,8 +58,10 @@ const Logo = styled.div`
 
 const Paragraph = styled.p`
   max-width: 600px;
-  font-size: 16px;
+  font-size: 14px;
   color: #334155;
+  padding:10px 8px;
+  text-align"center;
   line-height: 1.6;
 `;
 
@@ -200,7 +205,7 @@ const ProductSection = styled.div`
   flex-direction: column;
   gap: 24px;
   padding: 60px 20px;
-  margin: 40px auto;
+  margin: 40px 20px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   transform: perspective(1000px);
@@ -214,9 +219,17 @@ const ProductSection = styled.div`
 `;
 
 const ProductHeading = styled.h2`
-  color: blue;
-  font-size: 28px;
+  color: black;
+  font-size: 24px;
   text-align: center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  @media (max-width:645px)
+  {
+  font-size: 16px;
+  }
 `;
 
 const ProductParagraph = styled.p`
@@ -258,6 +271,20 @@ const DownloadButton = styled.a`
   }
 `;
 
+const HeadingWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-direction:column;
+`;
+
+const Logo1 = styled.img`
+  height: 40px;
+  @media (max-width:645px)
+  {
+  height:30px
+  }
+`;
 
 
 // ====== COMPONENT ======
@@ -366,13 +393,16 @@ Discover What Sets ZephyrApps Tech Apart from the Rest              </p>
             We have a track record of delivering successful projects that drive real impact for our clients.
           </p>
         </Card>
-        
-      </CardsSection>
-      {/* ========== Section 3.5: Flagship Product - Offersholic ========== */}
-<ProductSection>
+
+
+        <ProductSection>
   <h2 style={{ color: "black" ,textAlign:"center"}}>Our Products</h2>
 
-  <ProductHeading>Flagship Product: Offersholic</ProductHeading>
+  <HeadingWrapper>
+    <ProductHeading>Flagship Product: <Logo1 src="/icon1.png" alt="Offersholic Logo" /> Offersholic</ProductHeading>
+   
+    
+  </HeadingWrapper>
 
   <ProductParagraph>
     <strong style={{ color: "black" }}>Offersholic</strong> is a pioneering mobile application developed under the ZephyrApps banner. It is a pan-India platform designed to showcase <em>real-time offers and discounts</em> across various retail categories.
@@ -394,6 +424,10 @@ Discover What Sets ZephyrApps Tech Apart from the Rest              </p>
     Download on Google Play
   </DownloadButton>
 </ProductSection>
+        
+      </CardsSection>
+      {/* ========== Section 3.5: Flagship Product - Offersholic ========== */}
+
 
     </>
   );
