@@ -3,12 +3,12 @@ import './App.css';
 import styled,{ ThemeProvider } from "styled-components";
 import {darkTheme, lightTheme} from "./utils/themes";
 import Navbar from './components/Navbar';
-import Hero from './components/HeroSection';
-import Skills from './components/Skills';
+import Hero from './components/HomePage/index';
+import Skills from './components/About/index';
 import Education from './components/Education';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Projects from './components/projects';
-import Contact1 from './components/contact';
+import Projects from './components/Services/index';
+import Contact1 from './components/contact/index';
 import { useEffect } from 'react';
 import Footer from "./components/footer"
 

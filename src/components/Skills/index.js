@@ -29,7 +29,7 @@ const Wrapper = styled.div`
 const Heading = styled.div`
   font-size: 30px;
   font-weight: bold;
-  color: #0ea5e9;
+  color:purple;
   margin-bottom: 10px;
 
   @media (max-width: 768px) {
@@ -203,9 +203,9 @@ const Card = styled.div`
 const ProductSection = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
   padding: 60px 20px;
-  margin: 40px 20px;
+  margin: 40px 18px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   transform: perspective(1000px);
@@ -220,7 +220,7 @@ const ProductSection = styled.div`
 
 const ProductHeading = styled.h2`
   color: black;
-  font-size: 24px;
+  font-size: 23px;
   text-align: center;
   display:flex;
   align-items:center;
@@ -228,13 +228,13 @@ const ProductHeading = styled.h2`
   gap:10px;
   @media (max-width:645px)
   {
-  font-size: 16px;
+  font-size: 12px;
   }
 `;
 
 const ProductParagraph = styled.p`
   color: black ;
-  font-size: 16px;
+  font-size: 14px;
   max-width: 800px;
   text-align: center;
   margin: auto;
@@ -244,31 +244,29 @@ const FeatureList = styled.ul`
   max-width: 800px;
   margin: 20px auto;
   color: #334155;
-  font-size: 16px;
+  font-size: 14px;
   list-style-type: disc;
   padding-left: 20px;
   line-height: 1.8;
 `;
 
-const DownloadButton = styled.a`
+const DownloadButton = styled.div`
   margin-top: 20px;
-  display: inline-block;
-  background-color: black;
+  display: flex;
+  justify-content:center;
+  align-items:center;'
+  flex-direction:column;
+  gap:5px;
+  
   color: white;
   padding: 12px 24px;
   text-align:center;
   border-radius: 8px;
-  width:300px;
-  margin:auto;
+ 
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
-  transition: background 0.3s ease;
-
-  &:hover {
-    background-color: white;
-    color:black;
-  }
+ 
 `;
 
 const HeadingWrapper = styled.div`
@@ -419,10 +417,39 @@ Discover What Sets ZephyrApps Tech Apart from the Rest              </p>
   <ProductParagraph>
     Offersholic reflects our commitment to building <strong>impact-driven</strong>, <strong>consumer-focused</strong>, and <strong>scalable</strong> digital products.
   </ProductParagraph>
+  <DownloadButton>
+    <a
+  href="https://play.google.com/store/apps/details?id=com.zephyr.offersholic"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block"
+>
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+    alt="Get it on Google Play"
+    className="h-[40px] w-[300px]"
+  />
+</a>
+</DownloadButton>
+<DownloadButton>
+  <a
+  href="https://apps.apple.com/in/app/offersholic/id6736408497"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block"
+>
+  <img
+  style={{width:"160px"}}
+    src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+    alt="Download on the App Store"
+    
+  />
+</a>
 
-  <DownloadButton href="https://play.google.com/store/apps/details?id=com.zephyr.offersholic" target="_blank" rel="noopener noreferrer">
-    Download on Google Play
   </DownloadButton>
+  
+
+  
 </ProductSection>
         
       </CardsSection>

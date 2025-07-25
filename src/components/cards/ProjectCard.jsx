@@ -70,7 +70,7 @@ const Date = styled.div`
 const Description = styled.div`
   font-weight: 400;
   margin: 10px;
-  color: ${({ theme }) => theme.text_secondary + 99};
+  color: black;
   overflow: hidden;
   margin-top: 15px;
   display: -webkit-box;

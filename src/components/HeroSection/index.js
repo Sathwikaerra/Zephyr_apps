@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import {useNavigate} from 'react-router-dom'
 import { Bio } from '../../data/information';
 import Typewriter from 'typewriter-effect'
-import Sathwik2 from "./Sathwik.jpg"
+
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import StyledStarsCanvas from '../canvas/Stars';
@@ -160,7 +160,9 @@ gap:12px;
 `;
 
 const Span=styled.span`
-color: ${({ theme }) => theme.primary};
+color:purple;
+font-weihght:bold;
+
 cursor:pointer;
 
 `;

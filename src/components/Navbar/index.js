@@ -8,7 +8,7 @@ import { AiFillInstagram, AiFillLinkedin, FaRocket  } from "react-icons/fa";
 
 
 const Nav = styled.div`
-  background: linear-gradient(90deg,  #ffffff,#fcbad3,#ffffff);
+  background: #f5f5f5;
   height: 80px;
   display: flex;
   align-items: center;
